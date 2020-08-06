@@ -388,12 +388,13 @@ footer.entry-footer {
 
 
 /* * Styles for navigation */ 
-.menu-menu-1-container {
+.page-id-13 #page .menu-menu-1-container {
     position: absolute;
     right: 20%;
     left: 15%;
     text-align: center;
-    margin-top: 1em;;
+    margin-top: 1em;
+    
 }
 
 .home .entry-title {
@@ -567,4 +568,32 @@ footer.entry-footer {
   
   
   }
-  
+
+/* this is styles for posts */
+.blog .menu-menu-1-container {
+    position: initial;
+
+}
+
+article.post {
+    display: flex;
+    width: 67%;
+    margin: auto;
+    margin-top: 3em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.blog .menu-menu-1-container, .single .menu-menu-1-container, .page .menu-menu-1-container {
+    margin-top: 0;   
+}
+
+.blog nav#site-navigation, .single .menu-menu-1-container, .page .menu-menu-1-container {
+    text-align: center;
+    position: static;
+    background: #ffff;
+}
+
+
