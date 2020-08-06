@@ -49,7 +49,7 @@ a:hover{
     color: #8500D4;
     font-weight: 700;
     border:  1px solid #8500D4;
-    background: #68cbf0;
+    color: #68cbf0;
 }
 
   
@@ -100,7 +100,7 @@ a:hover{
     width: 25px;
   }
 
-/* main{
+.my-intro{
  height: 85vh;
  width: 100%;
  background: white;
@@ -108,17 +108,17 @@ a:hover{
 }
 
 @media all and (min-width: 500px){
-    main{
+    .my-intro{
         margin: 10% 0 0 0;
     }
 }
 
 @media all and (min-width: 1000px){
-    main{
+    .my-intro{
         margin: 5% 0 0 0;
         width: 90%;
     }
-} */
+}
 
 .entry-content header{
     background: #ffffff;
@@ -387,7 +387,14 @@ footer.entry-footer {
   }
 
 
-  /* * Styles for navigation */ 
+/* * Styles for navigation */ 
+.menu-menu-1-container {
+    position: absolute;
+    right: 20%;
+    left: 15%;
+    text-align: center;
+    margin-top: 1em;;
+}
 
 .home .entry-title {
     display: none;
@@ -418,7 +425,7 @@ footer.entry-footer {
       z-index: 999999999;
       float: right;
       top: 2em;
-      right: 5em;
+      right: 1em;
   }
   
   @media (min-width: 600px){
@@ -475,7 +482,6 @@ footer.entry-footer {
   @media (min-width: 600px) {
       ul#primary-menu {
           background: transparent;
-          border-left: 1px solid #fff;
           width: inherit;
       }  
   }
@@ -532,12 +538,15 @@ footer.entry-footer {
   }
   
   @media (min-width: 600px) {
-      .main-navigation a{
+      .main-navigation a {
           color: #000;
           border: 0;
           padding: .95em .7em;
           font-size: 1.08rem;
           display: inline-block;
+      }
+      .main-navigation a:hover {
+        color: #68cbf0;
       }
   }
   
