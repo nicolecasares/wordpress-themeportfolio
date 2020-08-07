@@ -39,6 +39,7 @@ a{
     padding: 5px 10px;
     border:  1px solid #00000059;
     font-weight: 700;
+    margin: .5em 0;
 }
 
 a:visited{
@@ -100,7 +101,7 @@ a:hover{
     width: 25px;
   }
 
-.my-intro{
+.home .my-intro{
  height: 85vh;
  width: 100%;
  background: white;
@@ -108,15 +109,16 @@ a:hover{
 }
 
 @media all and (min-width: 500px){
-    .my-intro{
+    .home .my-intro{
         margin: 10% 0 0 0;
     }
 }
 
 @media all and (min-width: 1000px){
-    .my-intro{
+    .home .my-intro{
         margin: 5% 0 0 0;
         width: 90%;
+        margin: auto;
     }
 }
 
@@ -135,25 +137,6 @@ a:hover{
         flex-direction: row;
     }
 }
-
-.info {
-    /* margin-right: -10%; for desktop*/
-    z-index: 99;
- 
-}
-
-@media all and (min-width: 500px){
-    .info{
-        margin-right: -10%;
-    }
-}
-
-@media all and (min-width: 1000px){
-    .info{
-        margin-left: 20%;
-    }
-}
-
 
 
 .info h1{
@@ -180,13 +163,17 @@ a:hover{
     color: #5f5f5f;
     font-weight: 300;
     margin: 0;
-    margin: 8% 0 2%;
+    margin: 4% 0 2%;
     
+}
+
+.contact p, .work p {
+    margin: 0;
 }
 
 .image-mask{
      background-size: cover;
-     background: url("http://localhost:8888/nicole/wp-content/uploads/2020/08/watercolor.jpg") no-repeat fixed;
+     background: url("http://nicolecasares.com/wp-content/uploads/2020/08/watercolor.jpg ") no-repeat fixed;
      /* background-position: center; */
      background-attachment: scroll;
      text-align: center;
@@ -214,11 +201,9 @@ section{
     /* margin:  15vh auto; */
     background: #ffffff;
     margin: 15vh auto auto 0;
-    
 }
 
 .about-me{
-    padding: 10% 9%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -340,6 +325,20 @@ footer#colophon p {
 /* Styles for the post and pages */
 main#primary {
     margin: 6% auto 39%;
+    
+}
+
+p {
+    margin-bottom: 2em;
+    line-height: 1.57em
+}
+
+.page main#primary article, .post main#primary article, .blog main#primary article, .single main#primary article{
+    width: 80%;
+    background: #ffff;
+    padding: 1em 3em;
+    max-width: 1000px;
+    margin: auto;
 }
 
 @media (min-width: 50.3125em){
@@ -349,12 +348,6 @@ main#primary {
 
 }
 
-
-header.entry-header {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 900px;
-}
 
 @media (min-width: 1508px) {
     header.entry-header{
@@ -394,6 +387,7 @@ footer.entry-footer {
     left: 15%;
     text-align: center;
     margin-top: 1em;
+    background: transparent;
     
 }
 
@@ -549,6 +543,10 @@ footer.entry-footer {
       .main-navigation a:hover {
         color: #68cbf0;
       }
+
+      .main-navigation .sub-menu a:hover  {
+        color: #ffff;
+      }
   }
   
   @media (min-width: 600px) {
@@ -556,8 +554,7 @@ footer.entry-footer {
           padding: .95em .7em;
       }
       
-      .current_page_item a{
-          border-bottom: 3px solid #8500D4;
+      .current_page_item a {
           padding: 0;
       }
   
