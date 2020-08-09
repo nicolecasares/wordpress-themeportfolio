@@ -357,15 +357,37 @@ p {
     width: 100%;
 }
 
+.blog main#primary article {
+
+}
+
 @media (min-width: 600px) {
     .page main#primary article, .post main#primary article, .blog main#primary article, .single main#primary article {
         width: 80%;
     }
 }
 
+@media (min-width: 50.3125em) {
+    .blog main#primary article {
+        width: 39%;
+        margin: 0 auto;
+    }
+    
+}
+
+
 @media (min-width: 50.3125em){
     main#primary {
         margin: 6% auto 15%;
+    }
+
+}
+
+@media (min-width: 50.3125em) {
+    .blog main#primary {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
     }
 
 }
@@ -379,6 +401,14 @@ p {
 
     }
 
+}
+
+.archive-description {
+    margin-bottom: 2em;
+    line-height: 1.57em;
+    width: 80%;
+    margin: auto;
+    text-align: left;
 }
 
 
